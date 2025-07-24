@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Information Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <h2>User Information Form</h2>
+
+  <form>
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <label for="about">About You:</label><br>
+      <textarea id="about" name="about" rows="4" cols="30"></textarea><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <label for="country">Country:</label><br>
+      <select id="country" name="country">
+        <option value="usa">United States</option>
+        <option value="nepal">Nepal</option>
+        <option value="india">India</option>
+        <option value="uk">United Kingdom</option>
+      </select><br><br>
+
+      <label>
+        <input type="checkbox" name="subscribe" value="yes">
+        Subscribe to newsletter
+      </label><br><br>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
